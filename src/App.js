@@ -1,6 +1,9 @@
-import './App.css';
+import {
+  Heading
+} from './styles';
 
 import { useEffect, useState } from 'react';
+import PurchaseDetails from './PurchaseDetails';
 
 const url = "https://idme-interview.herokuapp.com/";
 
@@ -17,14 +20,16 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Purchases</h1>
+      <header>
+        <Heading className="App-header">Purchases</Heading>
+       </header>
         <div>
+          <PurchaseDetails purchases={purchases}/>
           {purchases.map((purchase) => (
             <div>{JSON.stringify(purchase)}</div>
           ))}
         </div>
-      </header>
+      
     </div>
   );
 }

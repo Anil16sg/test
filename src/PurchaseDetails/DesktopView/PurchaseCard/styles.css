@@ -1,0 +1,79 @@
+.Purchase-Wrapper {
+  min-height: 100vh;
+  align-items: center;
+  font-size: 32px;
+  color: #333;
+}
+ 
+.img-wrapper {
+  width: 31px;
+  height: 29px;
+}
+
+.Text-1-Wrapper {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.Text-1-Wrapper >span
+{
+  margin-right: 2px;
+}
+
+.Description-Wrapper {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;  
+  display: flex;
+  align-items: center;
+}
+
+.Date-Wrapper {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.Category-Wrapper {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.Category-Wrapper >div{
+  background: #FFFFFF;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  display: inline-block;
+  padding: 2px 11px;
+}
+
+.Span-Wrapper >span
+{
+  margin-left: 50px;
+  margin-right: 25px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  margin-bottom: 3px;
+  position: relative;
+  
+  background: #333;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
