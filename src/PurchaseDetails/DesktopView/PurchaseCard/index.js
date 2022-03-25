@@ -9,14 +9,15 @@ import { format } from "date-fns";
 
 import { decode } from "../../../utils/decode";
 import {
-  CategoryDivWrapper,
   TrWrapper,
   ThWrapper,
   ImgWrapper,
   ThDateWrapper,
   ThCategoryWrapper,
-  ThDescriptionWrapper,
+  CategoryDivWrapper,
   ThHamburgerWrapper,
+  ThDescriptionWrapper,
+  ThContentFirstWrapper,
 } from "../styles";
 
 export const PurchaseCard = ({ purchase }) => {
@@ -28,7 +29,7 @@ export const PurchaseCard = ({ purchase }) => {
 
   return (
     <TrWrapper>
-      <ThWrapper>{purchase.name}</ThWrapper>
+      <ThContentFirstWrapper data-testId="purchased-by-name">{purchase.name}</ThContentFirstWrapper>
       <th>
         <ImgWrapper src={purchase.location} alt="" />
       </th>

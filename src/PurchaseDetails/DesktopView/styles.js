@@ -11,7 +11,12 @@ export const TrHeaderWrapper = styled.tr`
     line-height: 150%;
     box-shadow: inset 0px -1px 0px #e7e7ed;
     height: 50px;
+    min-width: 105px;
   }
+`;
+
+export const ThFirstWrapper = styled.th`
+   padding-left: 25px! important;
 `;
 
 export const getBColor = (props) => (props.bColor ? props.bColor : "#333");
@@ -19,12 +24,15 @@ export const getBColor = (props) => (props.bColor ? props.bColor : "#333");
 export const CategoryDivWrapper = styled.div`
   border-color: ${getBColor};
   color: ${getBColor};
+  padding: 0px 5px;
+  border: 2px solid;
 `;
 
 export const TrWrapper = styled.tr`
   & > th {
     vertical-align: top;
-    padding: 0px 10px;
+    text-align: left;
+    padding: 15px 10px;
     margin: 0px 20px;
 
     &::first-letter {
@@ -42,6 +50,15 @@ export const ThWrapper = styled.th`
   * > span {
     margin-right: 2px;
   }
+`;
+
+export const ThContentFirstWrapper = styled.th`
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%; 
+  padding-left: 25px! important;
 `;
 
 export const ThDateWrapper = styled.th`

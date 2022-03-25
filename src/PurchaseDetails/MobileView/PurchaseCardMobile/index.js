@@ -29,7 +29,7 @@ export const PurchaseCardMobile = ({ purchase }) => {
       <LeftContainerWrapper>
         <ImageNameWrapper>
           <ImgWrapper src={purchase.location} alt="" />
-          <NameWrapper>{purchase.name} </NameWrapper>
+          <NameWrapper data-testId="purchased-by-name-mobile">{purchase.name} </NameWrapper>
         </ImageNameWrapper>
         <DescriptionContainerWrapper>
           {decode(purchase.description)}

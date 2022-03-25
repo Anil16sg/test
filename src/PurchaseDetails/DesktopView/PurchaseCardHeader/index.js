@@ -5,12 +5,12 @@
  */
 
 import React from "react";
-import { TrHeaderWrapper } from '../styles';
+import { TrHeaderWrapper, ThFirstWrapper } from '../styles';
 
 export const PurchaseCardHeader = () => {
   return (
     <TrHeaderWrapper>
-      <th>Name</th>
+      <ThFirstWrapper data-testid="heading_name">Name</ThFirstWrapper>
       <th>Location</th>
       <th>Purchase Date</th>
       <th>Category</th>

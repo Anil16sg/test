@@ -6,7 +6,9 @@ import PurchaseDetails from "./PurchaseDetails";
 const url = "https://idme-interview.herokuapp.com/";
 
 function App() {
+
   const [purchases, setPurchases] = useState([]);
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await window.fetch(url);
@@ -22,8 +24,11 @@ function App() {
         <Heading className="App-header">Purchases</Heading>
       </header>
       <div>
-        <PurchaseDetails purchases={purchases} />
-
+        {purchases && purchases.length > 0 ? 
+          <PurchaseDetails purchases={purchases} />
+        :
+          <div> No purchase details to display </div>
+        } 
         <br/>
         <br/>
         <br/>
