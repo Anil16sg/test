@@ -43,13 +43,4 @@ You may also see any lint errors in the console.
 
 ### `npm test` OR `yarn test`
 
-Testing components with `testing-library` 
-
-
-
-
-
-
-
-
-
+Testing components with `testing-library`
