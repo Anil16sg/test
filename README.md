@@ -32,8 +32,8 @@ The user stories and designs may contain ambiguities. Use your best judgement.
 
 In the project directory, you can run:
 1. `nvm use` <-- To get the exact version of npm, if no nvm is installed, have node version 16 and above installed and set as default
-2. `npm install` OR yarn install
-3. `npm start` OR yarn start
+2. `npm install` OR `yarn install`
+3. `npm start` OR `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -41,7 +41,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `npm test` OR `yarn test`
+
+Testing components with `testing-library` 
 
 
 
