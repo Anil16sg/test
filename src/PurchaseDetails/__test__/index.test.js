@@ -45,8 +45,11 @@ describe("Desktop view", () => {
 });
 
 describe("Mobile view", () => {
+
   test("Should display, table header with name", async () => {
-    render(<PurchaseDetails purchases={mockData} />, { mediaState: windowSizes.sm });
+
+    global.resizeTo(450, 800);
+    render(<PurchaseDetails purchases={mockData} />);
 
     await act(async () => {
       expect(screen.getByTestId("mobile-container")).toBeInTheDocument();
@@ -54,7 +57,7 @@ describe("Mobile view", () => {
   });
 
   test("Should display, two rows as per mock data", async () => {
-    render(<PurchaseDetails purchases={mockData} />, { mediaState: windowSizes.sm });
+    render(<PurchaseDetails purchases={mockData} />);
 
     await act(async () => {
       expect(screen.getAllByTestId("purchased-by-name-mobile")).toHaveLength(2);
