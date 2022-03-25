@@ -1,9 +1,7 @@
-import {
-  Heading
-} from './styles';
+import { Heading } from "./styles";
 
-import { useEffect, useState } from 'react';
-import PurchaseDetails from './PurchaseDetails';
+import { useEffect, useState } from "react";
+import PurchaseDetails from "./PurchaseDetails";
 
 const url = "https://idme-interview.herokuapp.com/";
 
@@ -22,14 +20,17 @@ function App() {
     <div className="App">
       <header>
         <Heading className="App-header">Purchases</Heading>
-       </header>
-        <div>
-          <PurchaseDetails purchases={purchases}/>
-          {purchases.map((purchase) => (
-            <div>{JSON.stringify(purchase)}</div>
-          ))}
-        </div>
-      
+      </header>
+      <div>
+        <PurchaseDetails purchases={purchases} />
+
+        <br/>
+        <br/>
+        <br/>
+        {purchases.map((purchase) => (
+          <div>{JSON.stringify(purchase)}</div>
+        ))}
+      </div>
     </div>
   );
 }

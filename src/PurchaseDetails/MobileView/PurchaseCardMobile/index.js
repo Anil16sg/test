@@ -4,46 +4,49 @@
  *
  */
 
- import React from 'react';   
-import { format } from 'date-fns';
+import React from "react";
+import { format } from "date-fns";
 
- import {
+import {
   ContainerWrapper,
   ImgWrapper,
+  NameWrapper,
   ImageNameWrapper,
   LeftContainerWrapper,
   RightContainerWrapper,
   PurchaseDateContainer,
-  DescriptionContainerWrapper
- } from './styles'; 
- import { decode } from '../../../utils/decode';
- 
- export const PurchaseCardMobile = ({purchase}) => { 
-   const showDate = purchase.purchaseDate ? format(new Date(purchase.purchaseDate),'MMMM dd,yyyy')  : ''; 
+  DescriptionContainerWrapper,
+} from "./styles";
+import { decode } from "../../../utils/decode";
 
-   return (
-     <ContainerWrapper>  
-            <LeftContainerWrapper>
-              <ImageNameWrapper>
-                <ImgWrapper  src={purchase.location} alt=""/>  
-                {purchase.name} 
-              </ImageNameWrapper>
-              <DescriptionContainerWrapper>
-                {decode(purchase.description)}
-              </DescriptionContainerWrapper>
+export const PurchaseCardMobile = ({ purchase }) => {
+  const showDate = purchase.purchaseDate
+    ? format(new Date(purchase.purchaseDate), "MMMM dd,yyyy")
+    : "";
 
-              <PurchaseDateContainer>
-                <b>Purchase Date</b>
-                <br/>
-                {showDate}
-              </PurchaseDateContainer>
-            </LeftContainerWrapper>
-            <RightContainerWrapper>
-              <span>$</span>{purchase.price}
-            </RightContainerWrapper> 
-     </ContainerWrapper>
-   );
- } 
- 
- export default PurchaseCardMobile;
- 
+  return (
+    <ContainerWrapper>
+      <LeftContainerWrapper>
+        <ImageNameWrapper>
+          <ImgWrapper src={purchase.location} alt="" />
+          <NameWrapper>{purchase.name} </NameWrapper>
+        </ImageNameWrapper>
+        <DescriptionContainerWrapper>
+          {decode(purchase.description)}
+        </DescriptionContainerWrapper>
+
+        <PurchaseDateContainer>
+          <b>Purchase Date</b>
+          <br />
+          {showDate}
+        </PurchaseDateContainer>
+      </LeftContainerWrapper>
+      <RightContainerWrapper>
+        <span>$</span>
+        {purchase.price}
+      </RightContainerWrapper>
+    </ContainerWrapper>
+  );
+};
+
+export default PurchaseCardMobile;

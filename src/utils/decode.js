@@ -1,4 +1,5 @@
- 
+// this code is from the third party package, Just copied whats needed for this BOW to complete
+// So the Js footprint is less in size 
 
 const String_map = {
   nbsp: ' ',
