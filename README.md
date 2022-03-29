@@ -5,7 +5,7 @@ Congratulations on advancing to the technical screening portion of the interview
 Take Home Exercise:
 Please timebox yourself to a maximum of 12 hours of coding to complete the project objective below.
  
-Complete the project outlined as in design_requirment.png  
+Complete the project outlined as in **design_requirment.png ** 
 Project Objective:
 Create a sample project that displays a list of purchases. Endpoints provided as below.
 
