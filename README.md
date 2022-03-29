@@ -1,15 +1,13 @@
 #Front End Take Home Exercise
 
-Thank you for considering this opportunity with x and congratulations on advancing to the technical screening portion of the interview process.
+Congratulations on advancing to the technical screening portion of the interview process.
 
 Take Home Exercise:
-You have 3 days to create a PR for this exercise, please timebox yourself to a maximum of 3 hours of coding to complete the project objective below.
-
-Create a new branch under the repository based on the master branch.
-Complete the project outlined below.
-Create a Pull Request back to master with the changes from your branch.
+Please timebox yourself to a maximum of 12 hours of coding to complete the project objective below.
+ 
+Complete the project outlined as in design_requirment.png  
 Project Objective:
-Create a sample project that displays a list of purchases. Endpoints and UI are provided.
+Create a sample project that displays a list of purchases. Endpoints provided as below.
 
 Endpoints: To get the item details
 Purchase History:
